@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Credit Fight System – Bad Credit Is Not Your Fault</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background-color: #0b0b0b;
+      color: #ffffff;
+      line-height: 1.5;
+    }
+    a { color: inherit; text-decoration: none; }
+    .page { max-width: 1100px; margin: 0 auto; padding: 24px 16px 60px; }
+    .hero { text-align: center; padding: 80px 10px 60px; }
+    .hero h1 { font-size: 36px; font-weight: 900; margin-bottom: 12px; }
+    .hero h2 { font-size: 20px; font-weight: 400; opacity: 0.85; margin-bottom: 28px; }
+    .btn-primary {
+      display: inline-block;
+      background: #d4af37;
+      color: #000;
+      padding: 14px 26px;
+      border-radius: 999px;
+      font-weight: 800;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    .btn-ghost {
+      display: inline-block;
+      border: 1px solid #555;
+      padding: 10px 22px;
+      border-radius: 999px;
+      font-size: 14px;
+      margin-left: 8px;
+    }
+    .trustbar {
+      background: #111;
+      padding: 16px 8px;
+      text-align: center;
+      border-top: 1px solid #222;
+      border-bottom: 1px solid #222;
+      color: #d4af37;
+      font-size: 13px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    section { padding: 50px 10px; }
+    h2.section-title {
+      font-size: 28px;
+      font-weight: 800;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    p.section-sub {
+      text-align: center;
+      opacity: 0.85;
+      font-size: 16px;
+      margin-bottom: 28px;
+    }
+    .inside-list {
+      max-width: 650px;
+      margin: 0 auto;
+      font-size: 18px;
+    }
+    .inside-list li { margin-bottom: 8px; }
+    .pricing-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      justify-content: center;
+    }
+    .card {
+      background: #111;
+      border-radius: 14px;
+      border: 1px solid #222;
+      padding: 20px 16px;
+      flex: 1 1 260px;
+      max-width: 340px;
+    }
+    .card-gold {
+      background: #d4af37;
+      color: #000;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+      border: none;
+    }
+    .card h3 { font-size: 20px; font-weight: 800; margin-bottom: 6px; }
+    .card p { font-size: 14px; opacity: 0.9; margin-bottom: 10px; }
+    .price-main { font-size: 30px; font-weight: 900; margin-bottom: 4px; }
+    .price-old { font-size: 13px; text-decoration: line-through; opacity: 0.6; margin-right: 6px;}
+    .card ul { list-style: none; font-size: 14px; margin-bottom: 14px; }
+    .card ul li { margin-bottom: 4px; }
+    .btn-block {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      padding: 12px 14px;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .btn-outline {
+      border: 1px solid #444;
+    }
+    .btn-dark {
+      background: #000;
+      color: #fff;
+    }
+    .testimonials-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+    }
+    .tcard {
+      background: #111;
+      border-radius: 12px;
+      border: 1px solid #222;
+      padding: 14px 12px;
+      flex: 1 1 260px;
+      max-width: 320px;
+      font-size: 14px;
+    }
+    .faq-grid {
+      display: grid;
+      gap: 14px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .faq-item {
+      background: #111;
+      border-radius: 12px;
+      border: 1px solid #222;
+      padding: 14px 12px;
+      font-size: 14px;
+    }
+    .faq-item h3 { font-size: 15px; font-weight: 700; margin-bottom: 4px; }
+    .cta-box {
+      background: linear-gradient(135deg,#111,#222);
+      border-radius: 18px;
+      border: 1px solid #333;
+      padding: 24px 18px;
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    footer {
+      border-top: 1px solid #222;
+      padding: 24px 16px;
+      font-size: 12px;
+      opacity: 0.8;
+    }
+    footer .row {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: space-between;
+    }
+    @media (max-width: 600px) {
+      .hero { padding-top: 60px; }
+      .hero h1 { font-size: 30px; }
+      .hero h2 { font-size: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <!-- HERO -->
+    <header class="hero">
+      <h1>BAD CREDIT IS NOT YOUR FAULT</h1>
+      <h2>It's Their System – Use Consumer Law To Fight Back And Win Anyway.</h2>
+      <a href="#pricing" class="btn-primary">Get The Credit Fight System</a>
+      <a href="#inside" class="btn-ghost">See what’s inside</a>
+    </header>
+
+    <!-- TRUST BAR -->
+    <div class="trustbar">
+      ⚖ Based on Federal Consumer Law • 📈 Used Nationwide • 💰 Designed To Delete Negative Items
+    </div>
+
+    <!-- WHAT'S INSIDE -->
+    <section id="inside">
+      <h2 class="section-title">What’s Inside The Credit Fight System</h2>
+      <p class="section-sub">
+        A complete DIY legal strike package built on real consumer law —
+        not superstition or credit repair myths.
+      </p>
+      <ul class="inside-list">
+        <li>✔ Full letter library with statute citations</li>
+        <li>✔ Late payment, charge-off & bankruptcy deletion guides</li>
+        <li>✔ Certified mail and evidence tracking log</li>
+        <li>✔ 12-week execution roadmap so you always know the next step</li>
+        <li>✔ Remedy demand & invoice templates for repeat violators</li>
+        <li>✔ BONUS: How to make the bureaus pay YOU when they break the law</li>
+      </ul>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing">
+      <h2 class="section-title">Choose Your Level Of Firepower</h2>
+      <p class="section-sub">Start small or go all in. Every option uses the same consumer law engine.</p>
+
+      <div class="pricing-grid">
+        <!-- MINI -->
+        <div class="card">
+          <h3>Mini Starter Pack</h3>
+          <p>Test the system with a focused letter and quick-start guide.</p>
+          <div class="price-main">$9</div>
+          <ul>
+            <li>• 1 targeted deletion letter</li>
+            <li>• Mailing & tracking log</li>
+            <li>• Quick-start walkthrough</li>
+          </ul>
+          <a href="#" class="btn-block btn-outline">Get Starter Pack</a>
+        </div>
+
+        <!-- GOLD -->
+        <div class="card card-gold">
+          <div style="font-size:11px;text-transform:uppercase;font-weight:700;margin-bottom:4px;">
+            Most Popular
+          </div>
+          <h3>Gold Edition</h3>
+          <p>Full system with every letter pack, guide and the 12-week roadmap.</p>
+          <div class="price-main">$76</div>
+          <ul>
+            <li>• All core deletion letter packs</li>
+            <li>• Complete 12-week execution plan</li>
+            <li>• Statute reference table</li>
+            <li>• Lifetime updates</li>
+          </ul>
+          <a href="#" class="btn-block btn-dark">Get Gold Edition – $76</a>
+          <p style="font-size:11px;margin-top:6px;">Digital download • Instant access</p>
+        </div>
+
+        <!-- PRO -->
+        <div class="card">
+          <h3>Pro Upgrade</h3>
+          <p>Advanced remedies, invoices and escalation tools for repeat violators.</p>
+          <div>
+            <span class="price-old">$147</span>
+            <span class="price-main" style="font-size:26px;">$97</span>
+          </div>
+          <ul>
+            <li>• Advanced repeat-violator templates</li>
+            <li>• Invoice & notice of intent forms</li>
+            <li>• Training & escalation strategies</li>
+            <li>• Priority support resources</li>
+          </ul>
+          <a href="#" class="btn-block btn-outline">Upgrade To Pro</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section>
+      <h2 class="section-title">Proof It Actually Works</h2>
+      <p class="section-sub">Real stories from people who used law instead of luck.</p>
+      <div class="testimonials-grid">
+        <div class="tcard">
+          <p>“Got three late payments deleted in the first round. The letters are straight to the point.”</p>
+          <p style="font-size:12px;opacity:.7;margin-top:6px;">– Verified Buyer</p>
+        </div>
+        <div class="tcard">
+          <p>“The bankruptcy deletion guide alone was worth it. I finally understood why it was illegal to report it that way.”</p>
+          <p style="font-size:12px;opacity:.7;margin-top:6px;">– Verified Buyer</p>
+        </div>
+        <div class="tcard">
+          <p>“The 12-week plan stopped my analysis paralysis. I finally knew exactly what to do next.”</p>
+          <p style="font-size:12px;opacity:.7;margin-top:6px;">– Verified Buyer</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section>
+      <h2 class="section-title">Questions, Answered</h2>
+      <p class="section-sub">Straight answers. No fluff. No games.</p>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3>Is this legal?</h3>
+          <p>Yes. You’re using federal consumer law (FCRA, FDCPA, etc.) to correct inaccurate information. This is educational material, not personal legal advice.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How fast will I see results?</h3>
+          <p>Federal timelines are about 30 days per dispute cycle. Some people see movement after the first round; others take a few cycles depending on their situation.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What exactly do I receive?</h3>
+          <p>You get ready-to-send dispute letters, deletion guides, tracking logs, a 12-week execution plan, and statute references you can cite in your letters.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do you offer refunds?</h3>
+          <p>Because this is an instantly-delivered digital product, all sales are final. But you get lifetime updates as the laws, strategies and templates improve.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <
